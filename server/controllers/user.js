@@ -22,7 +22,7 @@ class userController{
                     id: data.id,
                     username : data.username
                 })
-                res.status(200).json({token})
+                res.status(200).json({token,id:data.id,username:data.username})
             }else{
                 res.status(500).json({message:"username or password is invalid"})
             }

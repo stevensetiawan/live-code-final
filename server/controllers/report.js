@@ -18,7 +18,7 @@ static addReport(req,res){
     let input = {
         cases:req.body.cases,
         CountryId:req.body.CountryId,
-        UserId: req.payload.data.id
+        UserId: req.payload.data.id,
     }
     console.log("ini req.payload", req.payload)
     Report.create(input)
